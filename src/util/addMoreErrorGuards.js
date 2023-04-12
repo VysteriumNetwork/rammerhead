@@ -31,7 +31,6 @@ process.on('uncaughtException', (err) => {
         console.error('Avoided crash:' + err.message);
     } else {
         // probably a TypeError or something important
-        console.error('About to throw: ' + err.message);
-        throw err;
+        console.error('Something broke...', err)
     }
 });
