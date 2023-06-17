@@ -1,12 +1,12 @@
 /**
- * for lazy people who don't want to type out `new URL('http://blah' + req.url).searchParams.get(ugh)` all the time
+ * for lazy people who don't want to type out `new URL('https://blah' + req.url).searchParams.get(ugh)` all the time
  */
 module.exports = class URLPath extends URL {
     /**
      * @param {string} path - /site/path
      */
     constructor(path) {
-        super(path, 'http://foobar');
+        super(path, 'https://foobar');
     }
     /**
      * @param {string} param - ?param=value

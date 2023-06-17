@@ -53,7 +53,7 @@ module.exports = function setupRoutes(proxyServer, sessionStore, logger) {
         const session = sessionStore.get(id);
 
         if (httpProxy) {
-            if (httpProxy.startsWith('http://')) {
+            if (httpProxy.startsWith('https://')) {
                 httpProxy = httpProxy.slice(7);
             }
             session.setExternalProxySettings(httpProxy);

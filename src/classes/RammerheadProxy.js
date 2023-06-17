@@ -77,7 +77,7 @@ class RammerheadProxy extends Proxy {
         dontListen = false,
         ssl = null,
         getServerInfo = (req) => {
-            const { hostname, port } = new URL('http://' + req.headers.host);
+            const { hostname, port } = new URL('https://' + req.headers.host);
             return {
                 hostname,
                 port,
