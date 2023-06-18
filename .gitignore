@@ -4,7 +4,7 @@ node_modules/
 src/client/*.min.*
 src/client/hammerhead.js
 .env
-
+.env.bak
 # don't commit session and cache data
 sessions/*
 cache-js/*
